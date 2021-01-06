@@ -502,6 +502,11 @@ align-items: center;
     display:block;
     top:60px;
 }
+
+a{
+    text-decoration:none;
+    color:var(--theme);
+}
 /* 
 #card3 img{
     width:90vmin;
