@@ -502,10 +502,14 @@ align-items: center;
     display:block;
     top:60px;
 }
-
+/* 
 #card3 img{
     width:90vmin;
 }
+#card4 img{
+    width:80vmin;
+} */
+
 
 
 
@@ -555,7 +559,7 @@ align-items: center;
     }
 
     50%{
-        transform:translateY(-25px);
+        transform:translateY(-15px);
     }
 
 
