@@ -22,6 +22,7 @@
     --navListBgHover: aqua;
     --toggleMenuColor: white;
     --toggleMenuColorHover: black;
+    --theme:#FF1493;
 }
 
 * {
@@ -33,6 +34,7 @@
 
 body {
     background: var(--bgColor);
+    padding-top:50px;
 }
 
 .navigation {
@@ -80,7 +82,7 @@ body {
     display: flex;
     text-decoration: none;
     /* color: var(--navTxtColor); */
-    color: var(--gradientA);
+    color: var(--bgColor);
 }
 
 .navigation>ul>li>a>.icon {
@@ -90,7 +92,7 @@ body {
     height: 60px;
     line-height: 60px;
     text-align: center;
-    color:var(--gradientB)
+    color:var(--theme)
 }
 
 .navigation>ul>li>a>.icon>.fa,
@@ -120,6 +122,7 @@ body {
     transform:scale(1.2);
     cursor: pointer;
     z-index:100;
+    color:#FF1493;
 }
 
 .toggleMenu.active {
@@ -138,13 +141,13 @@ body {
     line-height: 60px;
     text-align: center;
     font-size: 24px;
-    color: black;
+    color: var(--theme);
     background:transparent;
 }
 
 .toggleMenu.active:before {
     content: '\f00d';
-    color: white;
+    color: var(--theme);
 
 }
 
@@ -163,9 +166,10 @@ body{
 }
 
 .rowcard{
-    background:var(--toggleMenuColorHover)
+    background:var(--toggleMenuColorHover);
 }
 .projectHead{
+
     /* background:url('https://www.indiaeducation.net/imagesvr_ce/9577/Web%20Design%201.jpg'); */
     background-position:center;
     background-repeat: no-repeat;
@@ -180,13 +184,14 @@ body{
 
 }
 
-.innerCarousel img{
-  
 
-    width:100%;
+
+.carouselImg{
+
+    height:70vmin;
+    width:100vmin;
     display:block;
-    height:80vh;
-
+    margin:0 auto;
 
 }
 
@@ -194,7 +199,6 @@ body{
 #card1{
     border:none;
     box-shadow:  0px 10px 13px 0px var(--gradientA);
-
 
 }
 
@@ -241,6 +245,7 @@ align-items: center;
     display:flex;
     justify-content:center;
     align-items: center;
+
     
     }
     
@@ -253,6 +258,7 @@ align-items: center;
         align-items: center;
         
         }
+
 #detail2 .icon{
     font-size:3rem;
     color:var(--gradientB);
