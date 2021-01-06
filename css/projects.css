@@ -296,7 +296,9 @@ align-items: center;
 
 #detail1 .icon{
 
-    font-size:3rem;
+    
+     color:var(--theme);font-size:3rem;
+   
 }
 
 #card2{
@@ -324,6 +326,7 @@ align-items: center;
 
 #detail2 .icon{
     font-size:3rem;
+     color:var(--theme);
 }
 
 
@@ -350,6 +353,7 @@ align-items: center;
         }
 #detail3 .icon{
     font-size:3rem;
+     color:var(--theme);
 }
 
 
@@ -376,6 +380,7 @@ align-items: center;
         }
 #detail4 .icon{
     font-size:3rem;
+     color:var(--theme);
 }
 
 
@@ -403,6 +408,7 @@ align-items: center;
         }
 #detail5 .icon{
     font-size:3rem;
+     color:var(--theme);
 }
 
 
@@ -429,6 +435,7 @@ align-items: center;
         }
 #detail6 .icon{
     font-size:3rem;
+     color:var(--theme);
 }
 
 
@@ -456,6 +463,7 @@ align-items: center;
         }
 #detail7 .icon{
     font-size:3rem;
+     color:var(--theme);
 }
 
 
@@ -483,6 +491,7 @@ align-items: center;
         }
 #detail8 .icon{
     font-size:3rem;
+     color:var(--theme);
 }
 
 .cardImg{
@@ -494,9 +503,8 @@ align-items: center;
     top:60px;
 }
 
-#card2 .cardImg{
-
-   width:100%;
+#card3 img{
+    width:90vmin;
 }
 
 
