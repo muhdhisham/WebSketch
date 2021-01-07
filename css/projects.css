@@ -270,7 +270,7 @@ blockquote{
 }
 
 .card-deck{
-    background:var(--cdbgA);
+    background:var(--navBgColor);
 }
 
 .card-body{
