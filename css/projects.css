@@ -78,7 +78,7 @@ body {
 }
 
 .navigation>ul>li:hover .navigation > ul > li > a > .title{
-    color:var(--theme);
+    /* color:var(--theme); */
 }
 
 

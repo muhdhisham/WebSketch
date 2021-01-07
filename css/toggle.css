@@ -1,8 +1,8 @@
 .switch {
     position: relative;
     display: inline-block;
-    width: 10vmin;
-    height: 3vmin;
+    width: 62px;
+    height: 12px;
     top:5vmin;
   }
   
@@ -27,8 +27,8 @@
   .slider:before {
     position: absolute;
     content: "";
-    height: 4.5vmin;
-    width: 4.5vmin;
+    height: 30px;
+    width: 30px;
     left: 0px;
     bottom: -2px;
     background-color: white;
@@ -47,9 +47,9 @@
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(5vmin);
-    -ms-transform: translateX(5vmin);
-    transform: translateX(5vmin);
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
   }
   
   /* Rounded sliders */
