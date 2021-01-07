@@ -617,13 +617,16 @@
         switcher.addEventListener('change', () => {
             console.log(switcher.checked == true);
             if (switcher.checked) {
-                document.documentElement.style.setProperty('--theme', 'orange');
-                document.documentElement.style.setProperty('--boxshd1', '#a6a6a6');
-                document.documentElement.style.setProperty('--boxshd2', '#ffffff');
-                document.documentElement.style.setProperty('--cdbgA', '#f0f0f0');
-                document.documentElement.style.setProperty('--cdbgB', '#cacaca');
-                document.documentElement.style.setProperty('--toggleMenuColorHover', '#e0e0e0');
-                document.querySelectorAll('.col-sm-10').style.color = '#e0e0e0';
+                document.documentElement.style.setProperty('--theme', '#111111');
+                document.documentElement.style.setProperty('--boxshd1', '#a8923f');
+                document.documentElement.style.setProperty('--boxshd2', '#ffff7d');
+                document.documentElement.style.setProperty('--cdbgA', '#ffe965');
+                document.documentElement.style.setProperty('--cdbgB', '#e1c455');
+                document.documentElement.style.setProperty('--toggleMenuColorHover', '#fada5e');
+                document.documentElement.style.setProperty('--navBgColor', '#fada5e');
+                document.documentElement.style.setProperty('--clrHP', '#111111');
+
+ 
             } else {
                 document.documentElement.style.setProperty('--theme', '#FF1493');
                 document.documentElement.style.setProperty('--boxshd1', '#0b0b0b')
@@ -631,6 +634,9 @@
                 document.documentElement.style.setProperty('--cdbgA', '#0f0f0f')
                 document.documentElement.style.setProperty('--cdbgB', '#121212')
                 document.documentElement.style.setProperty('--toggleMenuColorHover', '#111111');
+                document.documentElement.style.setProperty(' --navBgColor', '#111111');
+                document.documentElement.style.setProperty('--navBgColor', 'white');
+
 
             }
 

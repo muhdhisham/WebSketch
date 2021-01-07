@@ -17,10 +17,9 @@
     --gradientF:#b721ff;
     --gradientG:#21d4fd;
     --gradientH:#b721ff;
-    --bgColor: whitesmoke;
+    --bgColor: #111111;
     --navBgColor: #111111;
     --navTxtColor: orange;
-    --navListBgHover: aqua;
     --toggleMenuColor: white;
     --toggleMenuColorHover: #111111;
     --theme:#FF1493;
@@ -60,7 +59,7 @@ body {
 
 .navigation>ul {
     position: absolute;
-    top: 50px;
+    top: 0px;
     left: 0;
     width: 100%;
 }
@@ -74,11 +73,11 @@ body {
 .navigation>ul>li:hover {
 
 
-    background: var(--theme);
-     color:black;
+    /* background: var(--theme); */
+     color:var(--theme);
 }
 
-.navigation>ul>li:hover .navigation > ul > li > a{
+.navigation>ul>li:hover .navigation > ul > li > a > .title{
     color:var(--theme);
 }
 
@@ -144,7 +143,7 @@ body {
     transform:scale(1.2);
     cursor: pointer;
     z-index:100;
-    color:#FF1493;
+    color:var(--theme);
 }
 
 .toggleMenu.active {
@@ -266,11 +265,11 @@ blockquote{
 }
 
 .card-deck{
-    background:#111111;
+    background:var(--cdbgA);
 }
 
 .card-body{
-    background:#111111;
+    background:var(--cdbgA);
     border-radius: 20px;
 background: linear-gradient(145deg, var(--cdbgA), var(--cdbgB));
 box-shadow:  5px 5px 0px var(--boxshd1),
