@@ -89,14 +89,15 @@ body {
     display: flex;
     text-decoration: none;
     /* color: var(--navTxtColor); */
-    color: var(--bgColor);
+    color: var(--theme);
 }
 
-.navigation>ul>li>a>.icon:hover{
+/* .navigation>ul>li>a>.icon:hover{
 
-    color:var(--bgColor);
+    color:var(--navBgColor);
 
-}
+} */
+
 
 .navigation>ul>li>a>.icon {
     position: relative;
@@ -105,13 +106,12 @@ body {
     height: 60px;
     line-height: 60px;
     text-align: center;
-    color:var(--theme)
+    /* color:var(--theme) */
 }
 
 .navigation.active,
 .navigation:hover {
     width: 300px;
-
 
 }
 
@@ -119,6 +119,10 @@ body {
 .navigation>ul>li>a>.icon>.fa,
 .fas {
     font-size: 24px;
+}
+
+.navigation > ul > li:hover .navigation > ul > li > a > .title{
+color: var(--navBgColor);
 }
 
 .navigation>ul>li>a>.title {
