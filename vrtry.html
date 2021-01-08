@@ -7,7 +7,6 @@
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
 <title>Voice App</title>
 </head>
 <body>
@@ -28,7 +27,7 @@
 
                 <div class="row">
                     <div class="col-12">
-                        <h2 class = 'content'></h2>
+                        <h2 class = 'content mx-auto' style = 'text-transform:capitalize;'></h2>
                     </div>
                 </div>
             </div>
@@ -44,10 +43,10 @@
 
     const Button = document.querySelector('.talk');
     const content = document.querySelector('.content');
+    const greetings = ['why do you want know how am I you ', 'go and get your work done', 'I do not want to talk to you', 'who do you think you are']
 
     const SpeechRecognition = window.speechRecognition || window.webkitSpeechRecognition;
     const recognition = new SpeechRecognition();
-
 
 recognition.onstart = () =>{
     console.log('voice is activated and you can use me now');
@@ -57,7 +56,6 @@ recognition.onresult = (event) => {
     const current = event.resultIndex;
     const transcript = event.results[current][0].transcript;
     content.textContent = transcript;
-    console.log(transcript);
     readOutLoud(transcript);
 }
     Button.addEventListener('click', () =>{
@@ -66,10 +64,18 @@ recognition.onresult = (event) => {
 
 
     function readOutLoud(message){
-        
+
         const speech = new SpeechSynthesisUtterance();
-        console.log(message);
-        speech.text = message;
+
+        speech.text = 'i dont know what you said. make it clear ok ';
+
+
+        if(message.include('how are you ')){
+            const finalText = greetings[Math.floor(Math.random() * greetings.length)];
+            speech.text = finalText;
+        }
+
+        // speech.text = message;
         speech.volume = 1;
         speech.rate = 1;
         speech.pitch = 1;
@@ -81,16 +87,25 @@ recognition.onresult = (event) => {
 
 
 <style>
+
+    .container-fluid{
+        display:flex;
+        justify-content:center;
+        text-align:center;
+        height:100vh;
+        align-items:center;
+        
+    }
     .circle{
         height:40vmin;
         width:40vmin;
         border-radius:50%;
         background:orange;
         position:relative;
-    
         display:flex;
         justify-content:center;
         align-items: center;
+        font-family:cursive;
 
 
 
