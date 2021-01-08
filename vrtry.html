@@ -7,30 +7,40 @@
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
 <title>Voice App</title>
 </head>
 <body>
 
 
     <div class="container-fluid">
-        <div class="row mx-auto">
+        <div class="row mx-auto text-center">
+
+            <div class="col-10 mx-auto" style = 'color:red; background:black; font-weight:700;font-size:xx-large;margin-bottom:40px; margin-top:50px;'>Actually I am negative</div>
 
             <div class="col-10 mx-auto">
 
+
                 <div class="speaker circle mx-auto my-auto">
 
+
+
                     <div>
-                        <button class = 'talk btn btn-warning'> Talk</button>
+                        <button class = 'talk btn btn-danger'><img class = 'img-fluid img-responsive img-thumbnail w-100 h-100 rounded-circle'src="./css/p9.png" alt="" srcset=""></button>
                     </div>
 
                 </div>
 
                 <div class="row">
                     <div class="col-12">
-                        <h2 class = 'content mx-auto' style = 'text-transform:capitalize;'></h2>
+                        <h2 class = 'content'></h2>
                     </div>
                 </div>
             </div>
+
+
+            <div class="col-10 mx-auto" style = 'color:red; background:black; font-weight:700;font-size:xx-large;margin-bottom:40px; margin-top:50px;'>I hate you</div>
+
         </div>
     </div>
 
@@ -43,10 +53,11 @@
 
     const Button = document.querySelector('.talk');
     const content = document.querySelector('.content');
-    const greetings = ['why do you want know how am I you ', 'go and get your work done', 'I do not want to talk to you', 'who do you think you are']
-
+    const greetings = ['go and do your business', 'why are you looking for such unnecessary deals', 'get lost you dumbo', 'you are just a fucking piece of shit', 'who the hell are you to ask me like this', 'dont you have manners', 'learn to be a man first then show this revolt'];
+    const notgreetings = ['you are at the wrong place little dumbo', 'you are nearly twenty when will you learn all this fucking boy','you are a play boy','what the fuck', 'the reality is that i hate you']
     const SpeechRecognition = window.speechRecognition || window.webkitSpeechRecognition;
     const recognition = new SpeechRecognition();
+
 
 recognition.onstart = () =>{
     console.log('voice is activated and you can use me now');
@@ -56,7 +67,15 @@ recognition.onresult = (event) => {
     const current = event.resultIndex;
     const transcript = event.results[current][0].transcript;
     content.textContent = transcript;
-    readOutLoud(transcript);
+    console.log(transcript);
+
+    if (transcript.includes('what') || (transcript.includes('how'))){
+        readOutLoud(greetings[(Math.floor(Math.random() * greetings.length))]);
+    }else{
+
+        readOutLoud(notgreetings[Math.floor(Math.random()* notgreetings.length)]);
+    }
+    
 }
     Button.addEventListener('click', () =>{
         recognition.start();
@@ -64,18 +83,10 @@ recognition.onresult = (event) => {
 
 
     function readOutLoud(message){
-
+        
         const speech = new SpeechSynthesisUtterance();
-
-        speech.text = 'i dont know what you said. make it clear ok ';
-
-
-        if(message.include('how are you ')){
-            const finalText = greetings[Math.floor(Math.random() * greetings.length)];
-            speech.text = finalText;
-        }
-
-        // speech.text = message;
+        console.log(message);
+        speech.text = message;
         speech.volume = 1;
         speech.rate = 1;
         speech.pitch = 1;
@@ -91,21 +102,19 @@ recognition.onresult = (event) => {
     .container-fluid{
         display:flex;
         justify-content:center;
-        text-align:center;
-        height:100vh;
         align-items:center;
-        
+        height:100vh;
     }
     .circle{
         height:40vmin;
         width:40vmin;
         border-radius:50%;
-        background:orange;
+        background:black;
         position:relative;
+    
         display:flex;
         justify-content:center;
         align-items: center;
-        font-family:cursive;
 
 
 
