@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href='./css/home.css'>
+<link rel="stylesheet" href="./css/navbar.css">
+<link rel="stylesheet" href="./css/toggle.css">
+<script src="./js/home.js"></script>
+<title>HOME-EPOCH ZERO</title>
+
+</head>
+<body>
+
+
+        <div class="swiper-container swiper-container-h">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Horizontal Slide 1</div>
+              <div class="swiper-slide">
+                <div class="swiper-container swiper-container-v">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+
+
+                        <div class="navigation">
+
+                            <ul>
+                    
+                                <li>
+                                    <a href="">
+                    
+                                        <span class='icon'>
+                                            <i class="fas fa-home    "></i>
+                                        </span>
+                                        <span class="title">Home</span>
+                                    </a>
+                                </li>
+                    
+                                <li>
+                                    <a href="">
+                    
+                                        <span class='icon'>
+                                            <i class="fas fa-project-diagram    "></i>
+                                        </span>
+                                        <span class="title">Projects</span>
+                                    </a>
+                                </li>
+                    
+                                <li>
+                                    <a href="">
+                    
+                                        <span class='icon'>
+                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                        </span>
+                                        <span class="title">Testimonials</span>
+                                    </a>
+                                </li>
+                    
+                                <li>
+                                    <a href="">
+                    
+                                        <span class='icon'>
+                                            <i class="fas fa-graduation-cap    "></i>
+                                        </span>
+                                        <span class="title">Career</span>
+                                    </a>
+                                </li>
+                    
+                                <li>
+                                    <a href="">
+                    
+                                        <span class='icon'>
+                                            <i class="fas fa-envelope-open    "></i>
+                                        </span>
+                                        <span class="title">Contact Us</span>
+                                    </a>
+                                </li>
+                    
+                                <ul class = text-center>
+                                    <label class="switch " id='switch'
+                                        style='border:2px solid var(--theme); border-radius:50px; height:28px;'>
+                                        <input type="checkbox" class='input'>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </ul>
+                    
+                            </ul>
+                    
+                        </div>
+                    
+                        <div class="toggleMenu" onclick='toggleMenuBar()'></div>
+                    <div class="talk">
+                        
+                    </div>
+
+                    </div>
+                    <div class="swiper-slide">Vertical Slide 2</div>
+                    <div class="swiper-slide">Vertical Slide 3</div>
+                    <div class="swiper-slide">Vertical Slide 4</div>
+                    <div class="swiper-slide">Vertical Slide 5</div>
+                  </div>
+                  <div class="swiper-pagination swiper-pagination-v"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">Horizontal Slide 3</div>
+              <div class="swiper-slide">Horizontal Slide 4</div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-h"></div>
+          </div>
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+
+<script>
+    var swiperH = new Swiper('.swiper-container-h', {
+      spaceBetween: 50,
+      pagination: {
+        el: '.swiper-pagination-h',
+        clickable: true,
+      },
+    });
+    var swiperV = new Swiper('.swiper-container-v', {
+      direction: 'vertical',
+      spaceBetween: 50,
+      pagination: {
+        el: '.swiper-pagination-v',
+        clickable: true,
+      },
+    });
+  </script>
+
+</body>
+</html>
