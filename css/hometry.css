@@ -1,0 +1,24 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+#sectionOne{
+    background:#fcf951ff;
+    height:100vh;
+}
+
+#sectionThree{
+    background:#333d79ff;
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+}
+
+.rocket{
+    position:absolute;
+    bottom:0;
+}

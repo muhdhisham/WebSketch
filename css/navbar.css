@@ -8,7 +8,9 @@
     --gradientG:#21d4fd;
     --gradientH:#b721ff;
     --bgColor: #111111;
-    --navBgColor: #111111;
+    /* --navBgColor: #111111; */
+    --navBgColor:transparent;
+
     --navTxtColor: orange;
     --toggleMenuColor: white;
     --toggleMenuColorHover: #111111;
