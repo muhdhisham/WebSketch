@@ -21,4 +21,5 @@
 .rocket{
     position:absolute;
     bottom:0;
+    transform:rotate(30deg);
 }

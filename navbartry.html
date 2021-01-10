@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <title>
+        navbartry
+    </title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container-fluid {
+            /* height:100vh;
+            width:100%; */
+            width: 100%;
+
+        }
+
+        .navContainer {
+            background-color: transparent;
+            position: fixed;
+            z-index: 100;
+            width: 100%;
+            display: block;
+            transition: all .8s ease;
+        }
+
+
+
+        .navigationMenu a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+     
+        .navigationMenu a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+        <div class="navContainer">
+
+            <nav class="navbar navbar-expand-sm navigationMenu">
+                <a class="navbar-brand" href="#">EPOCH ZERO</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Projects</a><span class="sr-only"></span></a>
+                        </li>
+
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Testimonials<span class="sr-only"></span></a>
+                        </li>
+
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Career<span class="sr-only"></span></a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Contact Us<span class="sr-only"></span></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </nav>
+    </div>
+
+    <div class="container-fluid">
+        <img src="./css/p8.png" class = 'w-100' alt="">
+        <img src="./css/p9.png" class = 'w-100' alt="">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = () => {
+            navigationAppear();
+        }
+
+        const navigationAppear = () => {
+            var height = window.innerHeight;
+            var heightL = height * 0.8;
+
+            if (document.body.scrollTop > heightL || document.documentElement.scrollTop > heightL) {
+                let navContainer = document.querySelector('.navContainer');
+                navContainer.style.backgroundColor = "#333";
+                console.log(height, heightL);
+
+            } else {
+                let navContainer = document.querySelector('.navContainer');
+                navContainer.style.backgroundColor = "transparent";
+            }
+        }
+      
+
+
+    </script>
+</body>
+
+
+
+</html>
