@@ -1,0 +1,9 @@
+:root{
+    --bgtheme : #013dc4;
+    --bgcolor:#E2d3f4;
+}
+
+#sectionOne, #sectionTwo{
+    height:100vh;
+    background-color:var(--bgcolor);
+}
