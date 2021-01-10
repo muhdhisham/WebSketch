@@ -1,0 +1,67 @@
+:root {
+    --bgtheme: #333;
+    --bgletter: #fff;
+    --bgmission: lightsalmon;
+    --bgvision: yellow;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#sectionOne {
+    height: 100vh;
+    background: var(--bgtheme);
+    position: relative;
+}
+
+#sectionTwo {
+
+    min-height:400vh;
+    z-index:1000;
+
+}
+
+.basictext{
+    padding-top:300vh;
+}
+
+#animationdivs{
+    position:relative;
+  
+}
+
+.sectionvnm {
+
+
+    pointer-events: none;
+    position: absolute;
+
+}
+
+.side {
+    z-index:1000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: var(--bgtheme);
+
+
+
+}
+
+
+.mission {
+
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+
+
+}
+
+.vision {
+
+    clip-path: polygon(100% 100%, 100% 0, 0 100%);
+
+}

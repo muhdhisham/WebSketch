@@ -121,14 +121,6 @@ background: linear-gradient(to right, #26D0CE, #1A2980);  */
   align-items:center;
 }
 
-.card-body .cardTriangle{
-  position:absolute;
-  clip-path: polygon(100% 50%, 0 0, 0 100%);
-  background-color:var(--bgthemeletter);
- 
-  height:20vmin;
-  width:20vmin;
-}
 
 .custom-shape-divider-top-1610263407 {
   position: absolute;
