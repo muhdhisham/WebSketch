@@ -147,5 +147,27 @@
     });
   </script>
 
+  <script>
+         window.onscroll = () => {
+            navigationAppear();
+        }
+
+        const navigationAppear = () => {
+            var height = window.innerHeight;
+            var heightL = height * 0.8;
+
+            if (document.body.scrollTop > heightL || document.documentElement.scrollTop > heightL) {
+                let navContainer = document.querySelector('.navContainer');
+                navContainer.style.backgroundColor = "#333";
+                console.log(height, heightL);
+
+            } else {
+                let navContainer = document.querySelector('.navContainer');
+                navContainer.style.backgroundColor = "transparent";
+            }
+        }
+      
+  </script>
+
 </body>
 </html>
