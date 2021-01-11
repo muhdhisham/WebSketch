@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root {
-    --bgtheme: #f2f2f2;
+    --bgtheme: #100c08;
     --bgletter: #fff;
     --bgmission: lightsalmon;
     --bgvision: yellow;
-    --design1:#3c1874;
+    /* --design1:#de354c; */
+    --design1:#932432;
     
 }
 
@@ -34,7 +35,8 @@ body {
 .navigationMenu a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: white;
+  font-weight:500;
   text-align: center;
   padding: 15px;
   text-decoration: none;
@@ -43,10 +45,19 @@ body {
 
 
 .navigationMenu a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: var(--design1);
+
 }
 
+.collapse li:hover{
+  background-color: var(--design1);
+  padding-left:5px;
+}
+.navbar-toggler-icon{
+  /* background-color:var(--design1); */
+  color:white;
+  border:1px solid white;
+}
 
 
 .carousel img{
