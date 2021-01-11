@@ -39,3 +39,5 @@ const scene = new ScrollMagic.Scene({
 // .addIndicators()
 .setPin(".animation")
 .addTo(controller);
+
+
