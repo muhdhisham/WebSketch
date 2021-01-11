@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root {
     --bgtheme: #333;
     --bgletter: #fff;
@@ -9,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 #sectionOne {
@@ -60,8 +62,44 @@ body {
 
 }
 
+.missionInside{
+    z-index:1000;
+    position:relative;
+
+}
+
+.missionInside h3, .missionInside p{
+    color:white;
+    font-weight:700;
+    position:absolute;
+   left:15vw;
+   top:20vh; 
+  
+  
+}
+.missionInside p {
+    top:25vh;
+    font-weight:500;
+}
+
+
 .vision {
 
     clip-path: polygon(100% 100%, 100% 0, 0 100%);
+
+}
+
+.visionInside{
+    z-index:1000;
+    position:relative;
+
+}
+
+.visionInside h3{
+    color:green;
+    font-weight:700;
+    position:absolute;
+    bottom:100px;
+    right:0px;
 
 }
