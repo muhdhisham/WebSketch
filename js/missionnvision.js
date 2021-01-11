@@ -3,8 +3,11 @@ const flightPath = {
     autoRotate: true,
     values:[
         {x:100 ,y:-100 },
-
-        {x:100, y:100}
+        {x:300, y:100},
+        {x:-100,y:-50},
+        {
+            x:-50, y:200
+        }
         
 
     ],
@@ -13,7 +16,7 @@ const flightPath = {
 
 const tween = new TimelineLite();
 tween.add(
-    TweenLite.to('.mission',4,
+    TweenLite.to('.rocket',4,
     
     {
         bezier:flightPath,
@@ -27,12 +30,12 @@ const controller = new ScrollMagic.Controller()
 
 
 const scene = new ScrollMagic.Scene({
-    triggerElement: '.animationdivs',
+    triggerElement: '.animation',
     duration:500,
     triggerHook:0
 
 })
 .setTween(tween)
-.addIndicators()
-.setPin(".animationdivs")
+// .addIndicators()
+.setPin(".animation")
 .addTo(controller);
