@@ -174,8 +174,7 @@ color:white;
 }
 
 /* shape divider */
-
-.custom-shape-divider-bottom-1610378252 {
+.custom-shape-divider-bottom-1610386250 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -184,15 +183,29 @@ color:white;
   line-height: 0;
 }
 
-.custom-shape-divider-bottom-1610378252 svg {
+.custom-shape-divider-bottom-1610386250 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 367px;
+  height: 161px;
 }
 
-.custom-shape-divider-bottom-1610378252 .shape-fill {
-  fill: var(--bgtheme);
+.custom-shape-divider-bottom-1610386250 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1610386250 svg {
+      width: calc(100% + 1.3px);
+      height: 79px;
+  }
+}
+@media (max-width: 492px) {
+  .custom-shape-divider-bottom-1610386250 svg {
+      width: calc(100% + 1.3px);
+      height: 44px;
+  }
 }
 /* shape divider end */
 
