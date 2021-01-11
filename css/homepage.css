@@ -78,6 +78,7 @@ body {
   
 }
 .missionInside p {
+    color:white;
     top:25vh;
     font-weight:500;
 }
