@@ -138,7 +138,6 @@ body {
 }
 
 
-
 .rocket{
   position:absolute;
   bottom:20vmin;
@@ -149,8 +148,8 @@ body {
 }
 
 .rocket img{
-  height:25vmin;
-  width:25vmin;
+  height:30vmin;
+  width:30vmin;
 }
 
 
@@ -271,10 +270,13 @@ color:white;
   
   }
 
-  #sectionIntermediateOne{
+  #sectionIntermediateOne, .sectionIntermediateOne{
 
      height:50vh;;
     
+   }
+   .animation{
+     height:50vh;
    }
    .rocket{
      bottom:0vh;
