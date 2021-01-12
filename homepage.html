@@ -63,11 +63,11 @@
 
 
 
-    <div class="container-fluid ">
+    <div class="container-fluid p-0">
 
 
         <div class="sectionOne">
-            <div class="row pl-3 pr-3">
+            <div class="row " id = 'carouselRow'>
                 <div class="col-12 mx-auto">
 
                     <div class="row">
@@ -215,7 +215,7 @@
 
                     <div class="row mt-md-5  mb-5 ">
                         <div class="col-10 mx-auto text-center">
-                            <h3>Our Products and Services</h3>
+                            <h3 style = 'color:var(--design)'>Our Products and Services</h3>
                         </div>
                     </div>
 
@@ -344,34 +344,51 @@
                 </svg>
             </div>
 
-            <div class="row mt-5">
+            <div class="row mt-5 mx-auto px-auto">
 
 
 
 
 
-                <div class="col-lg-12 text-center mb-5 mt-5">
+                <div class="col-lg-12 mx-auto text-center mb-5 mt-5">
 
 
-                    <div class="row">
-                        <div class="col-12">
-                            <a href="projects.html" class='mx-auto'>
-                                Check out our Latest Work <i class="fas fa-money-bill-wave-alt    "></i>
-                            </a>
+                    <div class="row mx-auto text-center">
+
+
+                        <div class="col-sm-4 mx-auto linkCardOuter text-center" >
+                            <div class="card text-center linkCard ">
+                                <div class="card-body">
+                                  <h4 class="card-title"><a href=""><i class="fas fa-money-bill-wave-alt"></i></a></h4>
+                                  
+                                </div>
+                              </div>
                         </div>
 
-                        <div class="col-12">
-                            <a href="404.html">
-                                Read the musing of our TecHub Community <i class="fa fa-signal" aria-hidden="true"></i>
-                            </a>
+                        <div class="col-sm-4  mx-auto linkCardOuter ">
+                            <div class="card text-center linkCard ">
+                                <div class="card-body">
+                                  <h4 class="card-title"><a href=""><i class="fa fa-signal" aria-hidden="true"></i></a></h4>
+                                  
+                                </div>
+                              </div>
                         </div>
 
-                        <div class="col-12">
-                            <a href="testimonials.html">
-                                Are We Liked? Check out what our clients are saying <i class="fa fa-audio-description"
-                                    aria-hidden="true"></i>
-                            </a>
+                        <div class="col-sm-4 mx-auto linkCardOuter ">
+                            <div class="card text-center linkCard ">
+                                <div class="card-body">
+                                  <h4 class="card-title">
+                                      
+
+                                    <a href=""><i class="fa fa-audio-description"
+                                        aria-hidden="true"></i></a>
+
+                                  </h4>
+                                  
+                                </div>
+                              </div>
                         </div>
+            
                     </div>
 
                 </div>
@@ -383,12 +400,12 @@
 
                                 <div class="row">
 
-                                    <div class="col-12">
+                                    <div class="col-12 detailshead">
                                         <h4>
                                             Project One
                                         </h4>
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-12 detailsbody">
                                         <p>
                                             LoremIpsum is simply dummy text of the printing and typesetting industry
                                         </p>
@@ -398,12 +415,12 @@
                             </div>
                             <div class="swiper-slide" style="background-image:url(./css/p6.png)">
 
-                                <div class="col-12">
+                                <div class="col-12 detailshead">
                                     <h4>
                                         Project One
                                     </h4>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-12 detailsbody">
                                     <p>
                                         LoremIpsum is simply dummy text of the printing and typesetting industry.
                                         LoremIpsum has been the industry's standard dummy text ever since the 1500s,
