@@ -58,9 +58,7 @@ body {
 .collapse li:hover a{
   color:var(--design1);
 }
-.navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;..");
-}
+
 
 
 .carousel img{
