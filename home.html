@@ -9,24 +9,130 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 
     <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
-<!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   
+    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>Home</title>
 </head>
+<!-- <style>
+    :root {
+    --bgtheme: #1c1c1bff;
+    --bgletter: #fff;
+    --bgmission: lightsalmon;
+    --bgvision: yellow;
+    /* --design1:#de354c; */
+    --design1:#ce4a7eff;
+    
+}
+    .navigationMenu a {
+        float: left;
+        display: block;
+        color: white;
+        font-weight: 500;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        font-size: 17px;
+
+
+
+    }
+
+    .navbar {
+        margin-top: 0;
+    }
+
+    a {
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+        display: inline-block;
+        padding: 15px 20px;
+        position: relative;
+    }
+
+    a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    a:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+    @media screen and (max-height: 300px) {
+        ul {
+            margin-top: 40px;
+        }
+    }
+
+    .navigationMenu a:hover {
+        background-color: var(--bgtheme);
+        color: var(--design1);
+        transition: all .2s;
+
+    }
+
+    .navbar-toggler-icon {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .navbar-brand {
+        border-right: 3px solid white;
+    }
+
+    @media (max-width: 575px) {
+        .navbar-brand {
+            border-right: 0px solid white;
+        }
+    }
+
+    .navbar-toggler-icon i {
+
+        color: white;
+        margin: 0 auto;
+        font-size: 28px;
+    }
+
+    .collapse li:hover {
+        background-color: var(--bgtheme);
+    }
+
+    .collapse li:hover a {
+        color: var(--design1);
+    }
+</style> -->
 
 <body>
 
     <div class="navContainer">
 
         <nav class="navbar navbar-expand-sm navigationMenu">
-            <a class="navbar-brand" href="#">EPOCH ZERO</a>
+            <a class="navbar-brand" href="./index.html">EPOCH ZERO</a>
             <button class="navbar-toggler  d-lg-none" type="button" data-toggle="collapse"
                 data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -37,25 +143,25 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="./homepage.html">Home<span class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="projects.html">Projects</a><span class="sr-only"></span></a>
-                    </li>
-
-
-                    <li class="nav-item active">
-                        <a class="nav-link" href="testimonials.html">Testimonials<span class="sr-only"></span></a>
+                        <a class="nav-link" href="./projects.html">Projects</a><span class="sr-only"></span></a>
                     </li>
 
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="career.html">Career<span class="sr-only"></span></a>
+                        <a class="nav-link" href="./testimonial.html">Testimonials<span class="sr-only"></span></a>
+                    </li>
+
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./career.html">Career<span class="sr-only"></span></a>
                     </li>
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="contact.html">Contact<span class="sr-only"></span></a>
+                        <a class="nav-link" href="./contact.html">Contact Us<span class="sr-only"></span></a>
                     </li>
 
                 </ul>
@@ -63,7 +169,6 @@
             </div>
         </nav>
     </div>
-
     <div class="container-fluid">
 
 
@@ -71,7 +176,7 @@
         <div class="sectionBegin">
 
             <div class="sectionBeginCircle ">
-                <img class = 'img-responsive img-fluid 'src="./css/P1.png" alt="" srcset="">
+                <img class='img-responsive img-fluid ' src="./css/P1.png" alt="" srcset="">
             </div>
 
         </div>
@@ -164,48 +269,52 @@
 
         <div class="sectionIntermediateOne mt-4">
 
-                
-                <div class="counter pt-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg-3">
-                                <div class="CounterBox mt-2 ">
-                                    <div class="count-up">
-                                        <p class="counter-count">7</p><p class = 'counterPlus'>+</p>
-                                        <h4>Years of Experience</h4>
-                                    </div>
+
+            <div class="counter pt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-3">
+                            <div class="CounterBox mt-2 ">
+                                <div class="count-up">
+                                    <p class="counter-count">7</p>
+                                    <p class='counterPlus'>+</p>
+                                    <h4>Years of Experience</h4>
                                 </div>
                             </div>
-                
-                            <div class="col-12 col-lg-3">
-                              <div class="CounterBox mt-2">
+                        </div>
+
+                        <div class="col-12 col-lg-3">
+                            <div class="CounterBox mt-2">
                                 <div class="count-up">
-                                    <p class="counter-count">200</p><p class = 'counterPlus'>+</p>
+                                    <p class="counter-count">200</p>
+                                    <p class='counterPlus'>+</p>
                                     <h4>Projects</h4>
                                 </div>
-                              </div>
                             </div>
-                
-                            <div class="col-12 col-lg-3 ">
-                               <div class="CounterBox mt-2">
+                        </div>
+
+                        <div class="col-12 col-lg-3 ">
+                            <div class="CounterBox mt-2">
                                 <div class="count-up">
-                                    <p class="counter-count">100</p><p class = 'counterPlus'>+</p>
+                                    <p class="counter-count">100</p>
+                                    <p class='counterPlus'>+</p>
                                     <h4>Clients</h4>
                                 </div>
-                               </div>
                             </div>
-                
-                             <div class="col-12 col-lg-3 ">
-                             <div class="CounterBox mt-2">
+                        </div>
+
+                        <div class="col-12 col-lg-3 ">
+                            <div class="CounterBox mt-2">
                                 <div class="count-up">
-                                    <p class="counter-count">80</p><p class = 'counterPlus'>+</p>
+                                    <p class="counter-count">80</p>
+                                    <p class='counterPlus'>+</p>
                                     <h4>Offshore work commitments</h4>
                                 </div>
-                             </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             <div id="sectionIntermediateOne" class='animation'>
 
 
@@ -459,7 +568,8 @@
                                 </div>
 
                             </div>
-                            <div class="swiper-slide p-sm-3 " style="background-image:url(./css/rocket.png);background-position-y: bottom;">
+                            <div class="swiper-slide p-sm-3 "
+                                style="background-image:url(./css/rocket.png);background-position-y: bottom;">
 
                                 <div class="col-12 detailshead text-center">
                                     <h4 class='detailshead'>
@@ -496,17 +606,19 @@
                     <div class="row mx-auto ">
 
                         <div class="col-sm-4 mx-auto mt-2 mt-sm-0">
-                            <div class="sectionSixCircle mx-auto"><a href=""><i class="fas fa-project-diagram    "></i></a></div>
+                            <div class="sectionSixCircle mx-auto"><a href=""><i
+                                        class="fas fa-project-diagram    "></i></a></div>
                         </div>
 
                         <div class="col-sm-4 mx-auto mt-2 mt-sm-0">
-                            <div class="sectionSixCircle mx-auto"><a href=""><i class="fa fa-signal" aria-hidden="true"></i></a></div>
+                            <div class="sectionSixCircle mx-auto"><a href=""><i class="fa fa-signal"
+                                        aria-hidden="true"></i></a></div>
                         </div>
 
                         <div class="col-sm-4 mx-auto mt-2 mt-sm-0">
                             <div class="sectionSixCircle mx-auto">
-                                <a href=""><i class="fa fa-audio-description"
-                                    aria-hidden="true"></i></a></div>
+                                <a href=""><i class="fa fa-audio-description" aria-hidden="true"></i></a>
+                            </div>
                         </div>
 
                     </div>
@@ -514,7 +626,7 @@
             </div>
         </div>
 
-       
+
 
 
     </div>
@@ -595,49 +707,49 @@
 
     <script>
 
-const flightPath = {
-    curviness:1.25,
-    autoRotate: true,
-    values:[
-        {x:100 ,y:-20 },
-        {x:300 ,y:10 },
-        {x:500 ,y:100 },
-        {x:750 ,y:-100 },
-        {x:350 ,y:-50 },
-        {x:600, y:100},
-        {x:700, y:0},
-       
-        {x:window.innerWidth, y:-350},
+        const flightPath = {
+            curviness: 1.25,
+            autoRotate: true,
+            values: [
+                { x: 100, y: -20 },
+                { x: 300, y: 10 },
+                { x: 500, y: 100 },
+                { x: 750, y: -100 },
+                { x: 350, y: -50 },
+                { x: 600, y: 100 },
+                { x: 700, y: 0 },
 
-    ],
+                { x: window.innerWidth, y: -350 },
 
-}
+            ],
 
-const tween = new TimelineLite();
-tween.add(
-    TweenLite.to('.rocket',8,
-    
-    {
-        bezier:flightPath,
-        ease: Power1.easeInOut
-    }
-    
-    )
-)
+        }
 
-const controller = new ScrollMagic.Controller()
+        const tween = new TimelineLite();
+        tween.add(
+            TweenLite.to('.rocket', 8,
+
+                {
+                    bezier: flightPath,
+                    ease: Power1.easeInOut
+                }
+
+            )
+        )
+
+        const controller = new ScrollMagic.Controller()
 
 
-const scene = new ScrollMagic.Scene({
-    triggerElement: '.sectionIntermediateOne',
-    duration:500,
-    triggerHook:0
+        const scene = new ScrollMagic.Scene({
+            triggerElement: '.sectionIntermediateOne',
+            duration: 500,
+            triggerHook: 0
 
-})
-.setTween(tween)
-// .addIndicators()
-.setPin(".sectionIntermediateOne")
-.addTo(controller);
+        })
+            .setTween(tween)
+            // .addIndicators()
+            .setPin(".sectionIntermediateOne")
+            .addTo(controller);
 
 
 
@@ -645,21 +757,21 @@ const scene = new ScrollMagic.Scene({
     </script>
 
 
-<script>
+    <script>
 
-$('.counter-count').each(function () {
-        $(this).prop('Counter',0).animate({
-            Counter: $(this).text()
-        }, {
-          
-            duration: 8000,
-            easing: 'swing',
-            step: function (now) {
-                $(this).text(Math.ceil(now));
-            }
+        $('.counter-count').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+
+                duration: 8000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
         });
-    });
-</script>
+    </script>
 </body>
 
 </html>
